@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{title}}</h1>
+        <p>欢迎{{user.age}}岁的{{user.username}}进入我的直播间</p>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+               title:'第一个vue程序',
+               user:{
+                username:'zmj',
+                age:18
+               }
+            }
+        })
+    </script>
+</body>
+</html>
